@@ -1,0 +1,191 @@
+:root {
+  --bg-color: #f4f6f8;
+  --text-color: #222;
+  --container-bg: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --section-bg: #f9fafb;
+  --border-color: #ddd;
+  --heading-color: #222;
+  --subtext-color: #555;
+  --list-color: #333;
+}
+.box{ 
+  height: 1600px;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.outer {
+  background-color: var(--container-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.intro-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--heading-color);
+}
+
+.info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--subtext-color);
+}
+
+.info h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--subtext-color);
+}
+.info h5 {
+  font-size: 14px;
+  color: var(--subtext-color);
+}
+.resume-body {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.worksNskills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.worksNskills > div {
+  background-color: var(--section-bg);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.worksNskills h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 5px;
+  color: var(--heading-color);
+}
+
+.worksNskills li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--list-color);
+}
+
+.details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.details h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 4px;
+  color: var(--heading-color);
+}
+
+.details h5,
+.details p,
+.details li {
+  font-size: 14px;
+  color: var(--subtext-color);
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+h3 {
+  width: 100%;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .intro-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-box {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+  }
+
+  .resume-body {
+    flex-direction: column;
+  }
+
+  .worksNskills > div {
+    margin-bottom: 20px;
+  }
+}
+
+
+body.dark-mode {
+  --bg-color: #0a0a2a;
+  --text-color: #e0e0e0;
+  --container-bg: #6464db;
+  --shadow-color: rgba(255, 255, 255, 0.05);
+  --section-bg: #3f3f7c;
+  --border-color: #555;
+  --heading-color: #f0f0f0;
+  --subtext-color: #ccc;
+  --list-color: #ccc;
+}
+
+
+
+
+
+.dark-mode .form-control {
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode textarea.form-control {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+
